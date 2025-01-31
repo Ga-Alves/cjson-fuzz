@@ -15,11 +15,6 @@
 #
 ################################################################################
 
-make clean
-make -j$(nproc) all
-
 $CC $CFLAGS -std=c99 -v -I. \
     ./fuzz_create_string.c -o $OUT/fuzz_create_string \
     $LIB_FUZZING_ENGINE ./cJSON.c
-
-# cp $SRC/*.dict $SRC/*.options $OUT/

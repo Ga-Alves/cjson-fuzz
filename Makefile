@@ -1,2 +1,2 @@
 all:
-	gcc cJSON.c 
+	gcc cJSON.c
