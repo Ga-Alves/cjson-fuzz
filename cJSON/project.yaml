@@ -1,0 +1,9 @@
+homepage: "https://github.com/Ga-Alves/cJson-fuzz"
+language: c
+primary_contact: "gabrielalvesreis@gmail.com"
+main_repo: "https://github.com/Ga-Alves/cJson-fuzz"
+file_github_issue: true
+sanitizers:
+- address
+- undefined
+- memory
