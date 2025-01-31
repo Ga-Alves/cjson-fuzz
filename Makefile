@@ -1,1 +1,2 @@
-gcc cJSON.c 
+all:
+	gcc cJSON.c 
