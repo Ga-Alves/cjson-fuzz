@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "cJSON.h"
 
-int LLVMFuzzerTestOneInput(const unsigned char *data, size_t size) {
-    cJSON_CreateString(data);
+int LLVMFuzzerTestOneInput(const unsigned char *data, size_t size)
+{
+    cJSON *json_string = cJSON_CreateString(data);
+    if (json_string)
+    {
+        cJSON_Delete(json_string);
+    }
 }
