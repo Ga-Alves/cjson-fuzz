@@ -9,4 +9,5 @@ int LLVMFuzzerTestOneInput(const unsigned char *data, size_t size)
     {
         cJSON_Delete(json_string);
     }
+    return 0;
 }
